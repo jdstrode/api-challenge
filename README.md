@@ -1,5 +1,27 @@
 # Python API Homework - What's the Weather Like?
 
+Inside this Repository:
+
+The below is a breakdown (and instructions) for a Python-API Homework Assignment required for the Data Science Bootcamp @ Northwestern University.
+
+Students were to utilize Jupyter Notebook / Jupyter Lab to complete the assignment.  My finalized answers/results are included within the below document. 
+
+Github API-Challenge folder summary:
+
+  The output_data folder contains:
+  * A cities.csv file that holds the random sample of city data generated and analyzed during this assignment. 
+  * Images of the figures (plots & maps) created for this assignment.
+
+  The Repository itself also holds several files:
+  * A VacationPy-with-outputs.ipynb file which houses my scripting to solve the Vacation portion of the homework.  
+  * A WeatherPY-updateds.ipynb file which houses my scripting to solve the Weather portion of the homework.
+  * A .gitignore file housing instructions on which files to ignore on the git pull.
+  * A README.md, which you are currently reading, which outlines the assignment instructions/components and some of my results.
+
+The assignment asks for our obvservations from the data/analysis.  This is included further below in this document along with the final plot images that I created from this assignment and inserted within this document. 
+
+
+
 ## Background
 
 Whether financial, political, or social -- data's true power lies in its ability to answer questions definitively. So let's take what you've learned about Python requests, APIs, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?"
@@ -38,13 +60,21 @@ After each plot add a sentence or too explaining what the code is and analyzing.
 Your second requirement is to run linear regression on each relationship, only this time separating them into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
 
 * Northern Hemisphere - Temperature (F) vs. Latitude
+![NHLatitudevsMaxTemp](output_data/NH_Latitude_vs_MaxTemp.png)
 * Southern Hemisphere - Temperature (F) vs. Latitude
+![SHLatitudevsMaxTemp](output_data/SH_Latitude_vs_MaxTemp.png)
 * Northern Hemisphere - Humidity (%) vs. Latitude
+![NHLatitudevsHumidity](output_data/NH_Latitude_vs_Humidity.png)
 * Southern Hemisphere - Humidity (%) vs. Latitude
+![SHLatitudevsHumidity](output_data/SH_Latitude_vs_Humidity.png)
 * Northern Hemisphere - Cloudiness (%) vs. Latitude
+![NHLatitudevsCloudiness](output_data/NH_Latitude_vs_Cloudiness.png)
 * Southern Hemisphere - Cloudiness (%) vs. Latitude
+![SHLatitudevsCloudiness](output_data/SH_Latitude_vs_Cloudiness.png)
 * Northern Hemisphere - Wind Speed (mph) vs. Latitude
+![NHLatitudevsWindspeed](output_data/NH_Latitude_vs_Windspeed.png)
 * Southern Hemisphere - Wind Speed (mph) vs. Latitude
+![SHLatitudevsWindspeed](output_data/SH_Latitude_vs_Windspeed.png)
 
 After each pair of plots explain what the linear regression is modeling such as any relationships you notice and any other analysis you may have.
 
@@ -81,9 +111,11 @@ Now let's use your skills in working with weather data to plan future vacations.
 
 * Using Google Places API to find the first hotel for each city located within 5000 meters of your coordinates.
 
+ ![heat map](output_data/heatmap.png)
+
 * Plot the hotels on top of the humidity heatmap with each pin containing the **Hotel Name**, **City**, and **Country**.
 
-  ![hotel map](Images/hotel_map.png)
+  ![hotel map](output_data/hotel_map.png)
 
 As final considerations:
 
